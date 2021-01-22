@@ -1,6 +1,6 @@
 <img src="img/img.png" />
 
-##Introducing 
+## Introducing 
 <p> This is a movie boking ticket that is built using tailwind css and javascript.</p>
 
 ## Features 
