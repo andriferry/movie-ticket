@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <title>Boking Ticket</title>
+
+    <style>
+      #seat {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: 5ms;
+        background-color: #4b5563;
+        margin: 5px;
+      }
+
+      #seat.selected {
+        background-color: #6ee7b7;
+      }
+      #seat:not(.occupied):hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+
+      #seat.occupied {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900">
+    <div class="h-screen flex justify-center w-full">
+      <div class="container m-auto justify-center flex-col">
+        <h1
+          class="capitalize text-gray-100 flex justify-center p-2 text-5xl font-black tracking-widest"
+        >
+          movie Ticket
+        </h1>
+        <div class="flex p-2 justify-center">
+          <div class="showcase flex p-2 justify-between rounded-lg bg-gray-800">
+            <div class="flex justify-center">
+              <div
+                class="m-1 w-4 h-4 bg-gray-600"
+                style="
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                "
+              ></div>
+              <small class="capitalize text-gray-400 p-1">N/a</small>
+            </div>
+            <div class="flex justify-center">
+              <div
+                class="m-1 w-4 h-4 bg-green-300"
+                style="
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                "
+              ></div>
+              <small class="capitalize text-gray-400 p-1">selected</small>
+            </div>
+            <div class="flex justify-center">
+              <div
+                class="m-1 w-4 h-4 bg-white"
+                style="
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                "
+              ></div>
+              <small class="capitalize text-gray-400 p-1">occupied</small>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container flex justify-center mx-auto p-3"
+        >
+          <div
+            class="screen bg-red-100"
+            style="
+              width: 50rem;
+              height: 20rem;
+            "
+          ></div>
+        </div>
+
+        <div class="container flex p-2 justify-center">
+          <div class="capitalize font-semibold text-gray-100 p-2">
+            pick a your movie :
+          </div>
+          <select
+            name=""
+            id="movie"
+            class="capitalize bg-gray-50 text-black rounded-lg border-0 py-1 px-4 text-lg"
+            style="appearance: none"
+          >
+            <option value="0" selected>Select Your movie</option>
+            <option value="12" data-image="infinity.jpg" class="capitalize">
+              infinity war $12
+            </option>
+            <option value="10" class="capitalize">end game $10</option>
+            <option value="9" class="capitalize">joker $9</option>
+          </select>
+        </div>
+
+        <div class="container flex justify-center">
+          <div class="p-5 w-2/4 flex space-x-5 justify-center">
+            <div class="flex rowseat flex-wrap" style="width: 55px">
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 bg-white"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 bg-white"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+            </div>
+            <div class="flex rowseat flex-wrap" style="width: 290px">
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4 occupied"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+            </div>
+            <div class="flex rowseat flex-wrap" style="width: 55px">
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+              <div id="seat" class="w-4 h-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="capitalize text-white p-10 font-semibold text-lg container flex price justify-center"
+        >
+          <p>you have a selected</p>
+          <span class="mx-2 text-green-300" id="totalseat">0</span> seats for a
+          price of $
+          <span class="mx-2 text-green-300" id="price">0</span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
