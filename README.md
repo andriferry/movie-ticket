@@ -1,6 +1,6 @@
-    <img src="img/Screenshot_2021-01-22 Boking Ticket.png" alt="" srcset="" />
+    <img src="img/img.png" />
 
-    <h1>Introducing</h1>
+    ##Introducing
 
     <p>
       This is a movie boking ticket that is built using tailwind css and
