@@ -1,0 +1,25 @@
+{
+  "name": "movie-ticket",
+  "version": "1.0.0",
+  "description": "<img src=\"img/img.png\" />",
+  "main": "app.js",
+  "scripts": {
+    "tw:dev" : "npx tailwindcss -i tailwind.css -o ./style/tailwind.css",
+    "tw:prod": "NODE_ENV=production npx tailwindcss -i tailwind.css -o ./style/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriferry/movie-ticket.git"
+  },
+  "author": "andri ferry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriferry/movie-ticket/issues"
+  },
+  "homepage": "https://github.com/andriferry/movie-ticket#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}
