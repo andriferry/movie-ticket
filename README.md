@@ -19,4 +19,3 @@
 -update total price. 
 - update total seat selected . 
 
-## Demo you can see live demo in <a href="https://andriferry.com/portfolio/booking-ticket">here</a>
